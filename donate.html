@@ -231,12 +231,12 @@
     }
 </script>-->
 
-       <section id="payment-options" style="padding: 20px; background-color: #f4f4f4; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
-    <h2 style="text-align: center; margin-bottom: 20px;">Payment Options</h2>
+ <section id="payment-options" style="max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; color: #FF8C42; margin-bottom: 20px;">Payment Options</h2>
     
     <!-- Dropdown for USD Account -->
-    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #f9f9f9;">
-        <div style="padding: 15px; cursor: pointer; background-color: #4682B4; color: white; display: flex; justify-content: space-between; align-items: center;"
+    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #FFE6D3;">
+        <div style="padding: 15px; cursor: pointer; background-color: #FF8C42; color: white; display: flex; justify-content: space-between; align-items: center;"
              onclick="toggleDropdown('usd-account')">
             <h3 style="margin: 0; font-size: 18px;">USD Account</h3>
             <span style="font-size: 20px; transition: transform 0.3s ease;" class="arrow">&#9660;</span>
@@ -250,8 +250,8 @@
     </div>
 
     <!-- Dropdown for Bank Transfer -->
-    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #f9f9f9;">
-        <div style="padding: 15px; cursor: pointer; background-color: #4682B4; color: white; display: flex; justify-content: space-between; align-items: center;"
+    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #FFE6D3;">
+        <div style="padding: 15px; cursor: pointer; background-color: #FF8C42; color: white; display: flex; justify-content: space-between; align-items: center;"
              onclick="toggleDropdown('bank-transfer')">
             <h3 style="margin: 0; font-size: 18px;">Details for Bank Transfer</h3>
             <span style="font-size: 20px; transition: transform 0.3s ease;" class="arrow">&#9660;</span>
@@ -264,8 +264,8 @@
     </div>
 
     <!-- Dropdown for Zelle Payment -->
-    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #f9f9f9;">
-        <div style="padding: 15px; cursor: pointer; background-color: #4682B4; color: white; display: flex; justify-content: space-between; align-items: center;"
+    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #FFE6D3;">
+        <div style="padding: 15px; cursor: pointer; background-color: #FF8C42; color: white; display: flex; justify-content: space-between; align-items: center;"
              onclick="toggleDropdown('zelle-payment')">
             <h3 style="margin: 0; font-size: 18px;">Zelle Payment</h3>
             <span style="font-size: 20px; transition: transform 0.3s ease;" class="arrow">&#9660;</span>
@@ -289,6 +289,7 @@
         arrow.style.transform = content.style.display === "block" ? "rotate(180deg)" : "rotate(0deg)";
     }
 </script>
+
  
     </section>
       	<section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">
