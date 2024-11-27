@@ -167,10 +167,10 @@
         </div>
       </div>-->
 
-<section id="payment-options" style="padding: 20px; background-color: #f4f4f4; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin: 20px;">
+<!--<section id="payment-options" style="padding: 20px; background-color: #f4f4f4; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="text-align: center; margin-bottom: 20px;">Payment Options</h2>
     
-    <!-- Dropdown Section -->
+    <!-- Dropdown Section 
     <div class="dropdown" style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #f9f9f9;">
         <div 
             onclick="toggleDropdown('usd-account')" 
@@ -214,9 +214,9 @@
             <p><strong>Details for Zelle Payment will go here...</strong></p>
         </div>
     </div>
-</section>
+</section>-->
 
-<script>
+<!--<script>
     // Function to toggle dropdown
     function toggleDropdown(id) {
         const content = document.getElementById(id);
@@ -229,9 +229,67 @@
         const arrow = header.querySelector(".arrow");
         arrow.style.transform = content.style.display === "block" ? "rotate(180deg)" : "rotate(0deg)";
     }
-</script>
+</script>-->
 
-        
+       <section id="payment-options" style="padding: 20px; background-color: #f4f4f4; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; margin-bottom: 20px;">Payment Options</h2>
+    
+    <!-- Dropdown for USD Account -->
+    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #f9f9f9;">
+        <div style="padding: 15px; cursor: pointer; background-color: #4682B4; color: white; display: flex; justify-content: space-between; align-items: center;"
+             onclick="toggleDropdown('usd-account')">
+            <h3 style="margin: 0; font-size: 18px;">USD Account</h3>
+            <span style="font-size: 20px; transition: transform 0.3s ease;" class="arrow">&#9660;</span>
+        </div>
+        <div id="usd-account" style="display: none; padding: 15px; border-top: 1px solid #ccc; background-color: white;">
+            <p><strong>Bank Name:</strong> Community Federal Savings Bank</p>
+            <p><strong>Name of Account:</strong> NSPPD</p>
+            <p><strong>Account Number:</strong> 8337702463</p>
+            <p><strong>Wire Routing:</strong> 026073008</p>
+        </div>
+    </div>
+
+    <!-- Dropdown for Bank Transfer -->
+    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #f9f9f9;">
+        <div style="padding: 15px; cursor: pointer; background-color: #4682B4; color: white; display: flex; justify-content: space-between; align-items: center;"
+             onclick="toggleDropdown('bank-transfer')">
+            <h3 style="margin: 0; font-size: 18px;">Details for Bank Transfer</h3>
+            <span style="font-size: 20px; transition: transform 0.3s ease;" class="arrow">&#9660;</span>
+        </div>
+        <div id="bank-transfer" style="display: none; padding: 15px; border-top: 1px solid #ccc; background-color: white;">
+            <p><strong>Bank Name:</strong> Zenith Bank</p>
+            <p><strong>Name of Account:</strong> Streams of Joy Fellowship</p>
+            <p><strong>Account Number:</strong> 1012108290</p>
+        </div>
+    </div>
+
+    <!-- Dropdown for Zelle Payment -->
+    <div style="margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; background-color: #f9f9f9;">
+        <div style="padding: 15px; cursor: pointer; background-color: #4682B4; color: white; display: flex; justify-content: space-between; align-items: center;"
+             onclick="toggleDropdown('zelle-payment')">
+            <h3 style="margin: 0; font-size: 18px;">Zelle Payment</h3>
+            <span style="font-size: 20px; transition: transform 0.3s ease;" class="arrow">&#9660;</span>
+        </div>
+        <div id="zelle-payment" style="display: none; padding: 15px; border-top: 1px solid #ccc; background-color: white;">
+            <p><strong>Details for Zelle Payment will go here...</strong></p>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleDropdown(id) {
+        const content = document.getElementById(id);
+        const header = content.previousElementSibling;
+
+        // Toggle display
+        content.style.display = content.style.display === "block" ? "none" : "block";
+
+        // Rotate arrow
+        const arrow = header.querySelector(".arrow");
+        arrow.style.transform = content.style.display === "block" ? "rotate(180deg)" : "rotate(0deg)";
+    }
+</script>
+ 
     </section>
       	<section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">
     	<div class="overlay"></div>
